@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#chkemail{
+	background:purple;
+	color:white;
+	font-weight:bold;
+	width:20%;
+	height:40px;
+	border-radius: 15px;
+}
