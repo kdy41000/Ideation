@@ -96,7 +96,7 @@
 	<p>IDEATION은 우리가 살아가면서 기억해야 하는 수많은 정보들을 저장하기위해 만들었습니다.</p>
     <p>공유 목적 뿐만 아니라</p>
     <p>내가 기억하고싶은것들을 찾아보기 편하게 정리 할 수 있도록 만들어가는것을 목표로 하고 있습니다.</p><br/>
-    <input type="button" value="Move to Signup" style="width:8%; height:40px; background:#6f3ba9; font-weight:bold; color:white; border-radius:8px;"/>
+    <input type="button" value="Move to make blog" onclick="location.href='makeblog.do';" style="width:10%; height:40px; background:#6f3ba9; font-weight:bold; color:white; border-radius:8px;"/>
     <br/><br/>
     <hr style="margin-left:10%; width:80%;"/><br/><br/>
     <br/>

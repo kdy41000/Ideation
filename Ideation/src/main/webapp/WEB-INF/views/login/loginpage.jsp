@@ -63,21 +63,11 @@
 		var mem_pw = $("input[name=mem_pw]").val().trim();;
 		
 		if(mem_email == ""){
-			Swal.fire({
-				  title: '아이디를 입력해 주세요.!',
-				  text: "버튼을 클릭해 주세요!",
-				  icon: 'warning',
-				  confirmButtonColor: '#3085d6',
-				  confirmButtonText: '확인'
-				})
+			beautyAlt("아이디를 입력해 주세요!");
+			
 		}else if(mem_pw == ""){
-			Swal.fire({
-				  title: '비밀번호를 입력해 주세요.!',
-				  text: "버튼을 클릭해 주세요!",
-				  icon: 'warning',
-				  confirmButtonColor: '#3085d6',
-				  confirmButtonText: '확인'
-				})
+			beautyAlt("비밀번호를 입력해 주세요!");
+		
 		}else{
 			var loginVal = {
 				"mem_email" : mem_email,

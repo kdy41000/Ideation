@@ -52,4 +52,11 @@ public class LoginController {
 		
 		return map;
 	}
+	
+	@RequestMapping(value = "/logout.do", method = RequestMethod.GET)
+	public String Logout(HttpSession session) {
+		session.invalidate();
+		System.out.println("로그아웃성공******************");
+		return "login/loginpage";
+	}
 }

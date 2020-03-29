@@ -5,11 +5,13 @@
 	<typeAliases>
 		<typeAlias type="com.mvc.ideation.login.dto.LoginDto" alias="loginDto"/>
 		<typeAlias type="com.mvc.ideation.signup.dto.SignupDto" alias="signupDto"/>
+		<typeAlias type="com.mvc.ideation.blog.dto.BlogDto" alias="blogDto"/>
 	</typeAliases>
 	
     <mappers>
      	<mapper resource="/mybatis/login-mapper.xml"/>
      	<mapper resource="/mybatis/signup-mapper.xml"/>
+     	<mapper resource="/mybatis/blog-mapper.xml"/>
     </mappers>
     <!-- resource : src/main/resources 를 뜻한다. -->
   
