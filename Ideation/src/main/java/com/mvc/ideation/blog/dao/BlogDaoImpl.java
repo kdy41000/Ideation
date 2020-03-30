@@ -1,5 +1,8 @@
 package com.mvc.ideation.blog.dao;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -25,6 +28,20 @@ public class BlogDaoImpl implements BlogDao{
 		}
 		
 		return res;
+	}
+
+	@Override
+	public BlogDto selectInfo(BlogDto dto) {
+		BlogDto dtoRes = new BlogDto();
+		
+		try {
+			dtoRes = sqlSession.selectOne(NAMESPACE + "selectInfo",dto);
+		} catch (Exception e) {
+			System.out.println("[error]:selectInfo");
+			e.printStackTrace();
+		}
+		
+		return dtoRes;
 	}
 
 }

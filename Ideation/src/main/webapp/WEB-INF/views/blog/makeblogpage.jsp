@@ -29,6 +29,7 @@
             <form action="makeblogname.do" method="post" enctype="multipart/form-data">
                 <input name="mem_email" type="email" value="${sessionScope.logininfo.mem_email }" readonly/>
                 <input name="mem_name" type="text" value="${sessionScope.logininfo.mem_name }" readonly/>
+                <input name="mem_pw" type="hidden" value="${sessionScope.logininfo.mem_pw }"/>
                 <input name="blog_name" type="text" value="" placeholder="블로그 이름을 입력해 주세요."/>
                 <input name="blog_description" type="text" value="" placeholder="블로그에 대한 간단한 설명을 입력해 주세요."/>
                 <input type="file" name="blog_logo" placeholder="블로그 로고를 선택해 주세요."/>

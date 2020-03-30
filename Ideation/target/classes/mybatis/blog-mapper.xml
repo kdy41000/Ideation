@@ -5,4 +5,8 @@
 	INSERT INTO IDE_BLOG
 	VALUES(IDE_BLOGSEQ.NEXTVAL, #{mem_email},#{mem_name},#{mem_pw},#{blog_name},#{blog_description},#{blog_logo})
 </insert>	
+<select id="selectInfo" resultType="blogDto" parameterType="blogDto">
+    SELECT * FROM IDE_BLOG
+    WHERE MEM_EMAIL=#{mem_email} AND BLOG_NAME=#{blog_name}
+</select>
 </mapper>
